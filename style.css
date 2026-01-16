@@ -1,0 +1,263 @@
+/* ===================== Global Styles ===================== */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.dark-mode {
+    background-color: #121212;
+    color: #f5f5f5;
+}
+
+h1, h2 {
+    margin: 0;
+}
+
+/* ===================== Header ===================== */
+.app-header {
+    background-color: #4caf50;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 3px 6px rgba(0,0,0,0.1);
+}
+
+.app-header button {
+    padding: 8px 12px;
+    background-color: #fff;
+    color: #4caf50;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.app-header button:hover {
+    background-color: #f0f0f0;
+}
+
+/* ===================== Buttons ===================== */
+button, .btn {
+    padding: 8px 15px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 5px;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+    transition: background-color 0.3s;
+}
+
+button:hover, .btn:hover {
+    background-color: #45a049;
+}
+
+.btn-secondary {
+    background-color: #ccc;
+    color: #333;
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 12px;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+.btn-secondary:hover {
+    background-color: #bbb;
+}
+
+/* ===================== Form Pages ===================== */
+.form-main {
+    max-width: 400px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 3px 10px rgba(0,0,0,0.1);
+}
+
+.form-main form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-main label {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.form-main input {
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* ===================== Dashboard ===================== */
+.dashboard-main {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.dashboard-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 1.2rem;
+    box-shadow: 0px 3px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-3px);
+}
+
+/* ===================== Calculator Pages ===================== */
+.calculator-main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 3px 10px rgba(0,0,0,0.1);
+}
+
+.calculator-inputs label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.calculator-inputs input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.calculator-output {
+    margin-top: 20px;
+}
+
+.calculator-output h2 {
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+
+/* ===================== Floating AI Chatbox ===================== */
+#aiChatIcon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #4caf50;
+    color: white;
+    padding: 12px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 24px;
+    z-index: 1000;
+    box-shadow: 0px 3px 6px rgba(0,0,0,0.2);
+}
+
+#aiChatBox {
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    width: 300px;
+    max-height: 400px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 3px 10px rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    z-index: 1000;
+}
+
+.hidden {
+    display: none;
+}
+
+.chat-header {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#chatMessages {
+    flex: 1;
+    padding: 10px;
+    overflow-y: auto;
+    background-color: #f1f1f1;
+}
+
+#chatInput {
+    padding: 8px;
+    border: none;
+    border-top: 1px solid #ccc;
+    width: calc(100% - 50px);
+}
+
+#chatSend {
+    width: 50px;
+    border-radius: 0;
+}
+
+/* ===================== Dark Mode ===================== */
+.dark-mode .app-header {
+    background-color: #1b5e20;
+}
+
+.dark-mode button, .dark-mode .btn {
+    background-color: #1b5e20;
+    color: white;
+}
+
+.dark-mode #aiChatBox {
+    background-color: #1c1c1c;
+    color: #f5f5f5;
+}
+
+.dark-mode #chatMessages {
+    background-color: #2a2a2a;
+}
+
+/* ===================== Responsive ===================== */
+@media screen and (max-width: 600px) {
+    #aiChatBox {
+        width: 90%;
+        right: 5%;
+    }
+
+    .calculator-main, .form-main, .dashboard-main {
+        margin: 10px;
+        padding: 15px;
+    }
+
+    .dashboard-cards {
+        grid-template-columns: 1fr;
+    }
+}
