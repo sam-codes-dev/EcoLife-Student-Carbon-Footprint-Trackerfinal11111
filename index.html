@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>EcoLife – Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="app-header">
+        <h1>Welcome to EcoLife</h1>
+        <button id="themeToggle">Toggle Dark/Light</button>
+    </header>
+
+    <main class="home-main">
+        <h2>Your eco-friendly journey starts here!</h2>
+        <div class="home-buttons">
+            <a href="signup.html" class="btn">Sign Up</a>
+            <a href="login.html" class="btn">Login</a>
+        </div>
+    </main>
+
+    <!-- Floating AI Chatbox -->
+    <div id="aiChatIcon">💬</div>
+    <div id="aiChatBox" class="hidden">
+        <div class="chat-header">EcoBot 🤖 <span id="closeChat">✖</span></div>
+        <div id="chatMessages"></div>
+        <input type="text" id="chatInput" placeholder="Type your question...">
+        <button id="chatSend">Send</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
